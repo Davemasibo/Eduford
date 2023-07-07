@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>
+            University Website Design
+        </title>
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    <body>
+        <section class="header" >
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks" >
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="">HOME</a> </li>
+                        <li><a href="">ABOUT</a> </li>
+                        <li><a href="">COURSE</a> </li>
+                        <li><a href="">BLOG</a> </li>
+                        <li><a href="">CONTACT US</a> </li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>World's Best Design Institute</h1>
+                <p>Quality and customer satisfaction is our number one priority at DaveDesigns. 
+                <br>We highly value our customers</p>
+                <a href="" class="hero-btn" >Visit Us To Know More</a>
+            </div>
+        </section>
+        <!-- course section  -->
+        <section class="course" >
+            <h1>Courses We Offer</h1>
+            <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+            
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+            </div>
+        </section>
+        <!-- campus section  -->
+        <section class="campus">
+            <h1>Our Campuses</h1>
+            <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/london.png">
+                    <div class="layer">
+                        <h3>NAIROBI</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/newyork.png">
+                    <div class="layer">
+                        <h3>NAKURU</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/washington.png">
+                    <div class="layer">
+                        <h3>ELDORET</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- facilities -->
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>State Of The Art Library</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>New And Improved Cafeteria</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Basketball Cort</h3>
+                    <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                </div>
+            </div>
+        </section>
+        <!-- customer feedback -->
+        <section class="testimonials">
+            <h1>What Our Customers Say</h1>
+            <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+            <div class="row">
+                <div class="testimonials-col">
+                    <img src="images/user1.jpg">
+                    <div>
+                        <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                        <h3>Sara Lee</h3>
+                    </div>
+                </div>
+                <div class="testimonials-col">
+                    <img src="images/user2.jpg">
+                    <div>
+                        <p>Quality and customer satisfaction is our number one priority at DaveDesigns</p>
+                        <h3>Dave Masibo</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- simple js for opening and closing the menu on small screens -->
+        <script>
+            var navLinks = document.getElementById(navLinks);
+
+            function showMenu() {
+                navLinks.style.right = "0"
+                
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+                
+            }
+        </script>
+    </body>
+</html>
